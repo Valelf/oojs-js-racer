@@ -1,0 +1,25 @@
+
+<table class="racer_table">
+  <tr id="player1_strip">
+    <td class="name"><%= @player_1.name %></td> 
+    <td class="active"></td>
+  </tr>
+  <tr id="player2_strip">
+    <td class="name"><%= @player_2.name %></td>
+    <td class="active"></td>
+  </tr>
+</table>
+
+<div class="winner_msg">
+  
+  <p>For future reference, this epic win's stats are saved at <a href="/game/<%= @game_id %>">
+  http://localhost:9393/game/<%= @game_id %></a>
+  <form action="/game/new" method="POST">
+    <input type="hidden" name="players[]" value="<%= @player_1.name %>" >
+    <input type="hidden" name="players[]" value="<%= @player_2.name %>" >
+    <input type="submit" value="Play Again">
+  </form>
+  <p><button><a href="/">Play again with new players!</a></button></p>
+
+
+</div>

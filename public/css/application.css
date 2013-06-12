@@ -1,0 +1,33 @@
+.racer_table td {
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+}
+
+.racer_table td.active {
+  background-color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  margin: 50px;
+}
+
+td.name {
+  border: none;
+  padding-right: 10px;
+}
+
+.winner_msg {
+  margin-top: 15px;
+  display: none;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
